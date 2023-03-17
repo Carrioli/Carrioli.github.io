@@ -1,0 +1,28 @@
+/*** CONTENTS ***/
+body { color: $color-00;
+    &.noscroll { overflow: hidden; }
+}
+
+/* Section */
+.page_section { align-items: center; display: flex; flex: 0 1 auto; justify-content: center; min-height: 100vh; padding: em(90) em(30); width: 100%;
+    &:nth-child(even) { background-color: $color-03; }
+    &:nth-child(odd) { background-color: $color-04; }
+}
+
+#hero { padding-top: em(150); }
+
+.list_link { margin-top: em(20);
+    a { color: $color-01; display: block;
+        &:hover { text-decoration: underline; }
+    }
+}
+
+img.foto_profilo { border: em(18) solid $color-02; border-radius: 50%; height: auto; margin-top: em(30); }
+
+// ≥ 768px
+@include MQ(M) {
+    /* Hero */
+    .hero_inner { padding-left: em(100);
+        h1 { margin-left: em(-100); }
+    }
+}

@@ -1,0 +1,49 @@
+/*** TYPOGRAPHY ***/
+@font-face {
+    font-family: 'core_sans_c45_regular';
+    src: url('../fonts/score-regular/s-core_-_coresansc-45regular-webfont.woff2') format('woff2'),
+         url('../fonts/score-regular/s-core_-_coresansc-45regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'core_sans_c65_bold';
+    src: url('../fonts/score-bold/s-core_-_coresansc-65bold-webfont.woff2') format('woff2'),
+         url('../fonts/score-bold/s-core_-_coresansc-65bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-smoothing: antialiased; }
+
+body { font-family: $font-01; letter-spacing: em(2); }
+
+p { line-height: 1.2; margin-bottom: em(21); }
+a { text-decoration: none;
+    &:hover { text-decoration: none; }
+    &:focus { outline: none; }
+}
+strong, b { font-family: $font-02; }
+em, i { font-style: italic; }
+del { text-decoration: line-through; }
+ins, u { text-decoration: underline; }
+mark, .mark {}
+small, .small { font-size: 80%; }
+
+
+/** HEADINGS **/
+h1, h2 { word-wrap: break-word; }
+h1 { color: $color-01; font-family: $font-02; font-size: em(24); letter-spacing: em(3); margin-bottom: em(20);
+    span { font-size: em(36); text-transform: uppercase; }
+}
+h2 { background-color: $color-02; color: $color-03; display: inline-block; margin-bottom: em(30); padding: 0 em(14); }
+
+
+/** LISTS **/
+ol { list-style: decimal inside; }
+ul { list-style: disc inside; }
+
+ul[class], ol[class] { list-style: none; padding: 0; }

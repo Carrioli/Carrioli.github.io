@@ -1,0 +1,19 @@
+/*** START ***/
+html, body { font-size: 18px; height: 100%; }
+
+/*** USEFULS CLASSES ***/
+.clearfix { clear: both; }
+
+/*** GRID ***/
+.container { margin: 0 auto; padding: 0 em(15); max-width: 100%; width: 100%; }
+.row { display: flex; flex: 0 1 auto; flex-wrap: wrap; margin-left: em(-15); margin-right: em(-15); }
+.col-md-6 { padding: 0 em(15); }
+.align-items-start { align-items: center; }
+
+// ≥ 768px
+@include MQ(M) {
+    /*** GRID ***/
+    .container { max-width: em(738); width: em(738); }
+    
+    .col-md-6 { width: 50%; }
+}

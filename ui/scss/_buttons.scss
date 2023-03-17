@@ -1,0 +1,16 @@
+/*** BUTTONS ***/
+button, input[type="submit"], input[type="reset"] {
+    &:hover { cursor: pointer; }
+    &:focus { outline: none; }
+}
+
+button, input[type="submit"], input[type="reset"]{ -webkit-appearance: none; background-color: transparent; border: none; border-radius: 0;
+    &:hover { cursor: pointer; }
+    &:disabled {
+        &:hover { cursor: not-allowed; }
+    }
+}
+
+.button_ghost { border-color: $color-02; border-style: solid; border-width: em(1.5); border-radius: em(10); color: $color-00; display: inline-block; font-family: $font-02; font-size: em(14); letter-spacing: em(1.5); line-height: em(14); min-width: em(130); padding: em(16) em(21); text-align: center; text-transform: uppercase; transition: all .15s;
+    &:hover { background-color: $color-02; color: $color-03; cursor: pointer; text-decoration: none; }
+}

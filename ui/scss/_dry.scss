@@ -1,0 +1,68 @@
+// VARIABLES
+// SIZE
+// Default Font Size
+$browser-context: 18;
+
+
+
+// FONTS
+$font-01: 'core_sans_c45_regular';
+$font-02: 'core_sans_c65_bold';
+
+
+
+// FUNCTIONS
+// Transform px into rem
+// How to Use: em(10);
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+
+
+// BREAKPOINT
+$XS: 575px;
+$S: 576px;
+$M: 768px;
+$L: 992px;
+$XL: 1200px;
+$XXL: 1500px;
+$FULLHD: 1920px;
+$RETINA: 192dpi;
+
+// Media Types and Devices
+// How to Use: @include MQ(L) { }
+@mixin MQ($canvas) {
+    @if $canvas == XS {
+        @media only screen and (max-width: $XS) {
+            @content; }
+    }
+    @else if $canvas == S {
+         @media only screen and (min-width: $S) {
+             @content; }
+    }
+    @else if $canvas == M {
+         @media only screen and (min-width: $M) {
+             @content; }
+    }
+    @else if $canvas == L {
+       @media only screen and (min-width: $L) {
+           @content; }
+    }
+    @else if $canvas == XL {
+       @media only screen and (min-width: $XL) {
+           @content; }
+    }
+    @else if $canvas == XXL {
+       @media only screen and (min-width: $XXL) {
+           @content; }
+    }
+    @else if $canvas == FULLHD {
+       @media only screen and (min-width: $FULLHD) {
+           @content; }
+    }
+    @else if $canvas == RETINA {
+       @media only screen and (min-resolution: $RETINA) {
+           @content; }
+    }
+}
