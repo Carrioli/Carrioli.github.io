@@ -2115,7 +2115,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http://html5:8888",
+	"externalServerAddress": "https://html5:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
