@@ -216,3 +216,9 @@ img.foto_profilo { border: 1rem solid #ACB2BD; border-radius: 50%; height: auto;
 .dark-pic{
   background-color: white;
 }
+
+.logo{
+  width: 15%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
